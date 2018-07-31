@@ -22,6 +22,11 @@ namespace global {
     const static string LOCAL_PROPS_FILENAME = "local.properties";
 
     /**
+     * Relative path to the project root ( where the local.props file is located ) from this file.
+     */
+    const static string RELATIVE_PATH_TO_PROJECT_ROOT = "../";
+
+    /**
      * Loads a set of key:value pairs from a file.
      *
      * The format of the file must obey the following rules:
@@ -34,8 +39,8 @@ namespace global {
      */
     class PropertiesLoader {
     public:
-        static PropertiesLoader *get_instance() {
-            return singleton.get();
+        static const PropertiesLoader &get_instance() {
+            return singleton;
         }
 
         const map<string, string> &get_all_properties() const {
@@ -46,9 +51,12 @@ namespace global {
             return local_properties[key];
         }
 
-    private:
-        PropertiesLoader() {
-            ifstream fin(LOCAL_PROPS_FILENAME);
+    protected:
+        /**
+         * Protected for testing purpose.
+         */
+        void load_props_and_init(string path_to_local_props) {
+            ifstream fin(path_to_local_props);
             if (!fin.good()) {
                 throw new std::runtime_error("Error opening the file with local properties.");
             }
@@ -57,9 +65,14 @@ namespace global {
                 local_properties[key] = val;
         }
 
+    private:
+        PropertiesLoader() {
+            load_props_and_init(RELATIVE_PATH_TO_PROJECT_ROOT + LOCAL_PROPS_FILENAME);
+        }
+
         map<string, string> local_properties;
 
-        static std::unique_ptr<PropertiesLoader> singleton;
+        static PropertiesLoader singleton;
     };
 
 }  // namespace global

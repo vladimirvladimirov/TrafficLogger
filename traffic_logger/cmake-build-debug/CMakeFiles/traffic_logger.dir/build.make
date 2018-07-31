@@ -56,18 +56,18 @@ include CMakeFiles/traffic_logger.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/traffic_logger.dir/flags.make
 
-CMakeFiles/traffic_logger.dir/main.cpp.obj: CMakeFiles/traffic_logger.dir/flags.make
-CMakeFiles/traffic_logger.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\traffic_logger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/traffic_logger.dir/main.cpp.obj"
-	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\traffic_logger.dir\main.cpp.obj -c X:\TrafficLogger\traffic_logger\main.cpp
+CMakeFiles/traffic_logger.dir/src/main.cpp.obj: CMakeFiles/traffic_logger.dir/flags.make
+CMakeFiles/traffic_logger.dir/src/main.cpp.obj: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\traffic_logger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/traffic_logger.dir/src/main.cpp.obj"
+	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\traffic_logger.dir\src\main.cpp.obj -c X:\TrafficLogger\traffic_logger\src\main.cpp
 
-CMakeFiles/traffic_logger.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_logger.dir/main.cpp.i"
-	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\traffic_logger\main.cpp > CMakeFiles\traffic_logger.dir\main.cpp.i
+CMakeFiles/traffic_logger.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/traffic_logger.dir/src/main.cpp.i"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\traffic_logger\src\main.cpp > CMakeFiles\traffic_logger.dir\src\main.cpp.i
 
-CMakeFiles/traffic_logger.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_logger.dir/main.cpp.s"
-	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\traffic_logger\main.cpp -o CMakeFiles\traffic_logger.dir\main.cpp.s
+CMakeFiles/traffic_logger.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/traffic_logger.dir/src/main.cpp.s"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\traffic_logger\src\main.cpp -o CMakeFiles\traffic_logger.dir\src\main.cpp.s
 
 CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.obj: CMakeFiles/traffic_logger.dir/flags.make
 CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.obj: ../src/utils/properties_loader.cpp
@@ -84,13 +84,13 @@ CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.s: cmake_force
 
 # Object files for target traffic_logger
 traffic_logger_OBJECTS = \
-"CMakeFiles/traffic_logger.dir/main.cpp.obj" \
+"CMakeFiles/traffic_logger.dir/src/main.cpp.obj" \
 "CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.obj"
 
 # External object files for target traffic_logger
 traffic_logger_EXTERNAL_OBJECTS =
 
-traffic_logger.exe: CMakeFiles/traffic_logger.dir/main.cpp.obj
+traffic_logger.exe: CMakeFiles/traffic_logger.dir/src/main.cpp.obj
 traffic_logger.exe: CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.obj
 traffic_logger.exe: CMakeFiles/traffic_logger.dir/build.make
 traffic_logger.exe: CMakeFiles/traffic_logger.dir/linklibs.rsp

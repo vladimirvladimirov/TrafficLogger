@@ -3,4 +3,6 @@ project(traffic_logger)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(traffic_logger main.cpp src/utils/properties_loader.cpp)
+set(UTILS src/utils/properties_loader.cpp)
+
+add_executable(traffic_logger src/main.cpp ${UTILS})

@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="X:/TrafficLogger/traffic_logger/main.cpp">
+		<Unit filename="X:/TrafficLogger/traffic_logger/src/main.cpp">
 			<Option target="traffic_logger"/>
 		</Unit>
 		<Unit filename="X:/TrafficLogger/traffic_logger/src/utils/properties_loader.cpp">

@@ -6,8 +6,8 @@
 
 #IncludeRegexTransform: 
 
-X:/TrafficLogger/traffic_logger/main.cpp
-src/utils/properties-loader.h
+X:/TrafficLogger/traffic_logger/src/main.cpp
+utils/properties-loader.h
 X:/TrafficLogger/traffic_logger/src/utils/properties-loader.h
 iostream
 -
@@ -25,4 +25,8 @@ c++/4.8.3/memory
 -
 c++/4.8.3/fstream
 -
+
+X:/TrafficLogger/traffic_logger/src/utils/properties_loader.cpp
+properties-loader.h
+X:/TrafficLogger/traffic_logger/src/utils/properties-loader.h
 

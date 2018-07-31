@@ -1,4 +1,4 @@
-#include "src/utils/properties-loader.h"
+#include "utils/properties-loader.h"
 
 #include <iostream>
 #include <string>
@@ -11,8 +11,11 @@ void print_time(string prefix);
 
 int main() {
 
-//    PropertiesLoader* props = PropertiesLoader::get_instance();
-//    int a;
+    PropertiesLoader props = PropertiesLoader::get_instance();
+    map<string, string> m = props.get_all_properties();
+    for(auto a : m) {
+        std::cout << a.first << " : " << a.second << '\n';
+    }
 
     return 0;
 }
