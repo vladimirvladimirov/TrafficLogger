@@ -1,43 +1,18 @@
-#include "conveyor/simple-file-conveyer.h"
-#include "parser/simple_http_log_parser.h"
+#include "src/utils/properties-loader.h"
 
 #include <iostream>
 #include <string>
 #include <c++/4.8.3/chrono>
 
 using std::cerr;
+using global::PropertiesLoader;
 
 void print_time(string prefix);
 
 int main() {
-    std::cin.sync_with_stdio(false);
-    string test_log = "X:\\git repos\\traffic_logger\\test_data\\sample_0.txt";
-    string real_log_ssd = "C:\\Users\\vivanovv\\Documents\\logs\\sample_1.txt";
-    string real_log_hdd = "E:\\logs\\sample_1.txt";
-    SimpleFileConveyer reader(real_log_ssd);
-    SimpleHttpLogParser parser;
 
-    print_time("Start: ");
-
-    do {
-        try {
-            unique_ptr<string> request(reader.read_next_request_string());
-            unique_ptr<MAP> props(parser.parse_http_request(*request));
-            for(auto pair : *props) {
-                std::cout << "!--" << pair.first << " : '" << pair.second << "' --! ";
-            }
-            getchar();
-        } catch (ConveyerException e) {
-            cerr << e.what() << '\n';
-            break;
-        } catch (ParserException e) {
-            cerr << e.what() << '\n';
-            break;
-        }
-
-    } while (reader.is_ok());
-
-    print_time("End: ");
+//    PropertiesLoader* props = PropertiesLoader::get_instance();
+//    int a;
 
     return 0;
 }

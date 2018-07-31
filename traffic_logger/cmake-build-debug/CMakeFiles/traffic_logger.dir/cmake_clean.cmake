@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/traffic_logger.dir/main.cpp.obj"
-  "CMakeFiles/traffic_logger.dir/conveyor/simple-file-conveyer.cpp.obj"
-  "CMakeFiles/traffic_logger.dir/parser/simple_http_log_parser.cpp.obj"
+  "CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.obj"
   "traffic_logger.pdb"
   "traffic_logger.exe"
   "traffic_logger.exe.manifest"

@@ -1,4 +1,4 @@
-# Install script for directory: X:/git repos/traffic_logger
+# Install script for directory: X:/TrafficLogger/traffic_logger
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "X:/git repos/traffic_logger/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "X:/TrafficLogger/traffic_logger/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

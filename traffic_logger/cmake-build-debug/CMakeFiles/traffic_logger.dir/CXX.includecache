@@ -6,41 +6,9 @@
 
 #IncludeRegexTransform: 
 
-X:/git repos/traffic_logger/conveyor/conveyer.h
-exception
--
-string
--
-
-X:/git repos/traffic_logger/conveyor/simple-file-conveyer.cpp
-simple-file-conveyer.h
-X:/git repos/traffic_logger/conveyor/simple-file-conveyer.h
-exception
--
-iostream
--
-cstring
--
-fstream
--
-string
--
-
-X:/git repos/traffic_logger/conveyor/simple-file-conveyer.h
-conveyer.h
-X:/git repos/traffic_logger/conveyor/conveyer.h
-fstream
--
-c++/4.8.3/bits/unique_ptr.h
--
-c++/4.8.3/iostream
--
-
-X:/git repos/traffic_logger/main.cpp
-conveyor/simple-file-conveyer.h
-X:/git repos/traffic_logger/conveyor/simple-file-conveyer.h
-parser/simple_http_log_parser.h
-X:/git repos/traffic_logger/parser/simple_http_log_parser.h
+X:/TrafficLogger/traffic_logger/main.cpp
+src/utils/properties-loader.h
+X:/TrafficLogger/traffic_logger/src/utils/properties-loader.h
 iostream
 -
 string
@@ -48,33 +16,13 @@ string
 c++/4.8.3/chrono
 -
 
-X:/git repos/traffic_logger/parser/http_log_parser.h
+X:/TrafficLogger/traffic_logger/src/utils/properties-loader.h
 c++/4.8.3/string
 -
-exception
+c++/4.8.3/map
 -
-map
+c++/4.8.3/memory
 -
-
-X:/git repos/traffic_logger/parser/simple_http_log_parser.cpp
-simple_http_log_parser.h
-X:/git repos/traffic_logger/parser/simple_http_log_parser.h
-http_log_parser.h
-X:/git repos/traffic_logger/parser/http_log_parser.h
-../conveyor/simple-file-conveyer.h
-X:/git repos/traffic_logger/conveyor/simple-file-conveyer.h
-sstream
--
-string
--
-map
--
-
-X:/git repos/traffic_logger/parser/simple_http_log_parser.h
-http_log_parser.h
-X:/git repos/traffic_logger/parser/http_log_parser.h
-string
--
-map
+c++/4.8.3/fstream
 -
 

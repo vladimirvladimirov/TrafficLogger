@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "X:/git repos/traffic_logger/conveyor/simple-file-conveyer.cpp" "X:/git repos/traffic_logger/cmake-build-debug/CMakeFiles/traffic_logger.dir/conveyor/simple-file-conveyer.cpp.obj"
-  "X:/git repos/traffic_logger/main.cpp" "X:/git repos/traffic_logger/cmake-build-debug/CMakeFiles/traffic_logger.dir/main.cpp.obj"
-  "X:/git repos/traffic_logger/parser/simple_http_log_parser.cpp" "X:/git repos/traffic_logger/cmake-build-debug/CMakeFiles/traffic_logger.dir/parser/simple_http_log_parser.cpp.obj"
+  "X:/TrafficLogger/traffic_logger/main.cpp" "X:/TrafficLogger/traffic_logger/cmake-build-debug/CMakeFiles/traffic_logger.dir/main.cpp.obj"
+  "X:/TrafficLogger/traffic_logger/src/utils/properties_loader.cpp" "X:/TrafficLogger/traffic_logger/cmake-build-debug/CMakeFiles/traffic_logger.dir/src/utils/properties_loader.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
