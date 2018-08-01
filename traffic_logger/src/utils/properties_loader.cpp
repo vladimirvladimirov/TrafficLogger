@@ -1,6 +1,5 @@
 #include "properties-loader.h"
 
 namespace global {
-    PropertiesLoader PropertiesLoader::singleton;
-
+    std::unique_ptr<PropertiesLoader> PropertiesLoader::singleton;
 }  // namespace global

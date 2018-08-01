@@ -11,10 +11,14 @@ void print_time(string prefix);
 
 int main() {
 
-    PropertiesLoader props = PropertiesLoader::get_instance();
-    map<string, string> m = props.get_all_properties();
-    for(auto a : m) {
-        std::cout << a.first << " : " << a.second << '\n';
+    try {
+        const PropertiesLoader* props = PropertiesLoader::get_instance();
+        map<string, string> m = props->get_all_properties();
+        for (auto a : m) {
+            std::cout << a.first << " : " << a.second << '\n';
+        }
+    } catch (const std::exception &x) {
+        cerr << x.what() << '\n';
     }
 
     return 0;

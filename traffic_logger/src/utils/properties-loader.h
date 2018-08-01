@@ -15,17 +15,6 @@ using std::map;
 using std::ifstream;
 
 namespace global {
-
-    /**
-     * Name of the file in which project-specific properties will be stored.
-     */
-    const static string LOCAL_PROPS_FILENAME = "local.properties";
-
-    /**
-     * Relative path to the project root ( where the local.props file is located ) from this file.
-     */
-    const static string RELATIVE_PATH_TO_PROJECT_ROOT = "../";
-
     /**
      * Loads a set of key:value pairs from a file.
      *
@@ -39,21 +28,24 @@ namespace global {
      */
     class PropertiesLoader {
     public:
-        static const PropertiesLoader &get_instance() {
-            return singleton;
+        static const PropertiesLoader *get_instance() {
+            if (!singleton) {
+                singleton.reset(new PropertiesLoader());
+            }
+            return singleton.get();
         }
 
         const map<string, string> &get_all_properties() const {
             return local_properties;
         }
 
-        const string &get_property(const string &key) {
-            return local_properties[key];
+        const string &get_property(const string &key) const {
+            return local_properties.at(key);
         }
 
     protected:
         /**
-         * Protected for testing purpose.
+         * Protected for testing purposes.
          */
         void load_props_and_init(string path_to_local_props) {
             ifstream fin(path_to_local_props);
@@ -67,13 +59,14 @@ namespace global {
 
     private:
         PropertiesLoader() {
-            load_props_and_init(RELATIVE_PATH_TO_PROJECT_ROOT + LOCAL_PROPS_FILENAME);
+            load_props_and_init("../local.properties");
         }
 
         map<string, string> local_properties;
 
-        static PropertiesLoader singleton;
+        static std::unique_ptr<PropertiesLoader> singleton;
     };
+
 
 }  // namespace global
 
