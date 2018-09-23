@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\TrafficLogger.dir/objects.a
+C:\win-builds\bin\ar.exe cr CMakeFiles\TrafficLogger.dir/objects.a @CMakeFiles\TrafficLogger.dir\objects1.rsp
+C:\win-builds\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\TrafficLogger.dir/objects.a -Wl,--no-whole-archive  -o TrafficLogger.exe -Wl,--out-implib,libTrafficLogger.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TrafficLogger.dir\linklibs.rsp

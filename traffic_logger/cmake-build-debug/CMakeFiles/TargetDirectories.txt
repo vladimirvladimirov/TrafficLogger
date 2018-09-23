@@ -1,3 +1,0 @@
-X:/TrafficLogger/traffic_logger/cmake-build-debug/CMakeFiles/traffic_logger.dir
-X:/TrafficLogger/traffic_logger/cmake-build-debug/CMakeFiles/edit_cache.dir
-X:/TrafficLogger/traffic_logger/cmake-build-debug/CMakeFiles/rebuild_cache.dir
