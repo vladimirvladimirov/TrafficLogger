@@ -1,3 +1,4 @@
+X:/TrafficLogger/cmake-build-debug/CMakeFiles/console.dir
 X:/TrafficLogger/cmake-build-debug/CMakeFiles/traffic_logger.dir
 X:/TrafficLogger/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 X:/TrafficLogger/cmake-build-debug/CMakeFiles/unit_tests.dir

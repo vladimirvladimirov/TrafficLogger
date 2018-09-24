@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named console
+
+# Build rule for target.
+console: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 console
+.PHONY : console
+
+# fast build rule for target.
+console/fast:
+	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/build
+.PHONY : console/fast
+
+#=============================================================================
 # Target rules for targets named traffic_logger
 
 # Build rule for target.
@@ -134,6 +147,33 @@ unit_tests: cmake_check_build_system
 unit_tests/fast:
 	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/build
 .PHONY : unit_tests/fast
+
+src/console/console.obj: src/console/console.cpp.obj
+
+.PHONY : src/console/console.obj
+
+# target to build an object file
+src/console/console.cpp.obj:
+	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/src/console/console.cpp.obj
+.PHONY : src/console/console.cpp.obj
+
+src/console/console.i: src/console/console.cpp.i
+
+.PHONY : src/console/console.i
+
+# target to preprocess a source file
+src/console/console.cpp.i:
+	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/src/console/console.cpp.i
+.PHONY : src/console/console.cpp.i
+
+src/console/console.s: src/console/console.cpp.s
+
+.PHONY : src/console/console.s
+
+# target to generate assembly for a file
+src/console/console.cpp.s:
+	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/src/console/console.cpp.s
+.PHONY : src/console/console.cpp.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -195,10 +235,14 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... console
 	@echo ... traffic_logger
 	@echo ... rebuild_cache
 	@echo ... unit_tests
 	@echo ... edit_cache
+	@echo ... src/console/console.obj
+	@echo ... src/console/console.i
+	@echo ... src/console/console.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

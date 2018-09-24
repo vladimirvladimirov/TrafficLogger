@@ -1,7 +1,8 @@
 #include <iostream>
-#include "gtest.h"
+
+using std::cin;
+using std::cout;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+
 }

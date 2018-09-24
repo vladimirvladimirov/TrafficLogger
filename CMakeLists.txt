@@ -10,6 +10,9 @@ set(GTEST_HEADERS_LOCATION "${GTEST_ROOT}/include/gtest")
 
 include_directories(${GTEST_HEADERS_LOCATION})
 
+# Modules
+add_library(console src/console/console.cpp src/console/console.h)
+
 # Executables
 add_executable(traffic_logger src/main.cpp)
 add_executable(unit_tests test/unit_tests.cpp ${GTEST_SRCS})
