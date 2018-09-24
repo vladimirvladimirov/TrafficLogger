@@ -19,3 +19,4 @@ add_executable(unit_tests test/unit_tests.cpp ${GTEST_SRCS})
 
 # Linking external libs
 target_link_libraries(unit_tests PUBLIC "${GTEST_LIB_FOLDER}/libgtestd.a")
+target_link_libraries(traffic_logger console)
