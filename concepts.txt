@@ -11,3 +11,8 @@
 
  * Constructors and (virtual) destructors of hierarchied classes should be declared in .h file and defined
     in .cpp file. Otherwise you will get "undefined reference to constructor" which is actually defined.
+
+ * Use CAPS_LOCK_SUFFIX to name the different objects in the CMakeLists file, where SUFFIX can be one of:
+    - MDL: for internal modules
+    - SRCS: for set of source files
+    - HDRS: for set of header files

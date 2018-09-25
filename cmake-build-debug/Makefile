@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named console
+# Target rules for targets named CONSOLE_MDL
 
 # Build rule for target.
-console: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 console
-.PHONY : console
+CONSOLE_MDL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 CONSOLE_MDL
+.PHONY : CONSOLE_MDL
 
 # fast build rule for target.
-console/fast:
-	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/build
-.PHONY : console/fast
+CONSOLE_MDL/fast:
+	$(MAKE) -f CMakeFiles\CONSOLE_MDL.dir\build.make CMakeFiles/CONSOLE_MDL.dir/build
+.PHONY : CONSOLE_MDL/fast
 
 #=============================================================================
 # Target rules for targets named traffic_logger
@@ -154,7 +154,8 @@ src/console/console.obj: src/console/console.cpp.obj
 
 # target to build an object file
 src/console/console.cpp.obj:
-	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/src/console/console.cpp.obj
+	$(MAKE) -f CMakeFiles\CONSOLE_MDL.dir\build.make CMakeFiles/CONSOLE_MDL.dir/src/console/console.cpp.obj
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/console/console.cpp.obj
 .PHONY : src/console/console.cpp.obj
 
 src/console/console.i: src/console/console.cpp.i
@@ -163,7 +164,8 @@ src/console/console.i: src/console/console.cpp.i
 
 # target to preprocess a source file
 src/console/console.cpp.i:
-	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/src/console/console.cpp.i
+	$(MAKE) -f CMakeFiles\CONSOLE_MDL.dir\build.make CMakeFiles/CONSOLE_MDL.dir/src/console/console.cpp.i
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/console/console.cpp.i
 .PHONY : src/console/console.cpp.i
 
 src/console/console.s: src/console/console.cpp.s
@@ -172,7 +174,8 @@ src/console/console.s: src/console/console.cpp.s
 
 # target to generate assembly for a file
 src/console/console.cpp.s:
-	$(MAKE) -f CMakeFiles\console.dir\build.make CMakeFiles/console.dir/src/console/console.cpp.s
+	$(MAKE) -f CMakeFiles\CONSOLE_MDL.dir\build.make CMakeFiles/CONSOLE_MDL.dir/src/console/console.cpp.s
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/console/console.cpp.s
 .PHONY : src/console/console.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -201,6 +204,33 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\traffic_logger.dir\build.make CMakeFiles/traffic_logger.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+test/console.obj: test/console.cpp.obj
+
+.PHONY : test/console.obj
+
+# target to build an object file
+test/console.cpp.obj:
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/console.cpp.obj
+.PHONY : test/console.cpp.obj
+
+test/console.i: test/console.cpp.i
+
+.PHONY : test/console.i
+
+# target to preprocess a source file
+test/console.cpp.i:
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/console.cpp.i
+.PHONY : test/console.cpp.i
+
+test/console.s: test/console.cpp.s
+
+.PHONY : test/console.s
+
+# target to generate assembly for a file
+test/console.cpp.s:
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/console.cpp.s
+.PHONY : test/console.cpp.s
 
 test/unit_tests.obj: test/unit_tests.cpp.obj
 
@@ -235,7 +265,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... console
+	@echo ... CONSOLE_MDL
 	@echo ... traffic_logger
 	@echo ... rebuild_cache
 	@echo ... unit_tests
@@ -246,6 +276,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... test/console.obj
+	@echo ... test/console.i
+	@echo ... test/console.s
 	@echo ... test/unit_tests.obj
 	@echo ... test/unit_tests.i
 	@echo ... test/unit_tests.s
