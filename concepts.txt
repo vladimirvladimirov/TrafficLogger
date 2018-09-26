@@ -5,6 +5,8 @@
  * Always put code in namespaces. The closing brace for the namespace should includes as comment the name of the NS it
     closes
 
+  * On the line with the ending bracket of class definitions in headers, add as comment '  // class ClassName'.
+
  * void methods should return an int instead;
     - return value 0 means operation successfull
     - any other value will denote an error code in some context
@@ -16,3 +18,7 @@
     - MDL: for internal modules
     - SRCS: for set of source files
     - HDRS: for set of header files
+
+ * Enum names should be all CAPITAL_CASE_NAME with the suffix _ENUM.
+
+ * Default function parameter values are allowed even if not documented ( for now ).

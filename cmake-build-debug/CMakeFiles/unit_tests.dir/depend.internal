@@ -4,6 +4,16 @@
 CMakeFiles/unit_tests.dir/src/console/console.cpp.obj
  X:/TrafficLogger/src/console/console.cpp
  X:/TrafficLogger/src/console/console.h
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj
+ X:/TrafficLogger/src/session-manager/configurations.cpp
+ X:/TrafficLogger/src/session-manager/configurations.h
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj
+ X:/TrafficLogger/src/session-manager/session-manager.cpp
+ X:/TrafficLogger/src/session-manager/session-manager.h
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj
+ X:/TrafficLogger/src/session-manager/configurations.h
+ X:/TrafficLogger/src/session-manager/session.cpp
+ X:/TrafficLogger/src/session-manager/session.h
 CMakeFiles/unit_tests.dir/test/console.cpp.obj
  .././src/console/console.h
  C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-death-test.h
@@ -28,6 +38,31 @@ CMakeFiles/unit_tests.dir/test/console.cpp.obj
  C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-string.h
  C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-type-util.h
  X:/TrafficLogger/test/console.cpp
+CMakeFiles/unit_tests.dir/test/session.cpp.obj
+ .././src/session-manager/configurations.h
+ .././src/session-manager/session.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-death-test.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-message.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-param-test.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-printers.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-test-part.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-typed-test.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest_pred_impl.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/gtest_prod.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/custom/gtest-port.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/custom/gtest-printers.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-death-test-internal.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-filepath.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-internal.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-linked_ptr.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-param-util-generated.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-param-util.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-port-arch.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-port.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-string.h
+ C:/Program Files (x86)/googletest-distribution/include/gtest/internal/gtest-type-util.h
+ X:/TrafficLogger/test/session.cpp
 CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj
  C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-death-test.h
  C:/Program Files (x86)/googletest-distribution/include/gtest/gtest-message.h

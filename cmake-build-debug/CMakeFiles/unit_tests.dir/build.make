@@ -56,24 +56,10 @@ include CMakeFiles/unit_tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/unit_tests.dir/flags.make
 
-CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
-CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
-CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: ../test/unit_tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj"
-	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\test\unit_tests.cpp.obj -c X:\TrafficLogger\test\unit_tests.cpp
-
-CMakeFiles/unit_tests.dir/test/unit_tests.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/test/unit_tests.cpp.i"
-	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\test\unit_tests.cpp > CMakeFiles\unit_tests.dir\test\unit_tests.cpp.i
-
-CMakeFiles/unit_tests.dir/test/unit_tests.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test/unit_tests.cpp.s"
-	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\test\unit_tests.cpp -o CMakeFiles\unit_tests.dir\test\unit_tests.cpp.s
-
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: ../test/console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/unit_tests.dir/test/console.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/unit_tests.dir/test/console.cpp.obj"
 	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\test\console.cpp.obj -c X:\TrafficLogger\test\console.cpp
 
 CMakeFiles/unit_tests.dir/test/console.cpp.i: cmake_force
@@ -84,10 +70,38 @@ CMakeFiles/unit_tests.dir/test/console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test/console.cpp.s"
 	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\test\console.cpp -o CMakeFiles\unit_tests.dir\test\console.cpp.s
 
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: ../test/session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/unit_tests.dir/test/session.cpp.obj"
+	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\test\session.cpp.obj -c X:\TrafficLogger\test\session.cpp
+
+CMakeFiles/unit_tests.dir/test/session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/test/session.cpp.i"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\test\session.cpp > CMakeFiles\unit_tests.dir\test\session.cpp.i
+
+CMakeFiles/unit_tests.dir/test/session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test/session.cpp.s"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\test\session.cpp -o CMakeFiles\unit_tests.dir\test\session.cpp.s
+
+CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
+CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: ../test/unit_tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj"
+	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\test\unit_tests.cpp.obj -c X:\TrafficLogger\test\unit_tests.cpp
+
+CMakeFiles/unit_tests.dir/test/unit_tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/test/unit_tests.cpp.i"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\test\unit_tests.cpp > CMakeFiles\unit_tests.dir\test\unit_tests.cpp.i
+
+CMakeFiles/unit_tests.dir/test/unit_tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/test/unit_tests.cpp.s"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\test\unit_tests.cpp -o CMakeFiles\unit_tests.dir\test\unit_tests.cpp.s
+
 CMakeFiles/unit_tests.dir/src/console/console.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
 CMakeFiles/unit_tests.dir/src/console/console.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
 CMakeFiles/unit_tests.dir/src/console/console.cpp.obj: ../src/console/console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/unit_tests.dir/src/console/console.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/unit_tests.dir/src/console/console.cpp.obj"
 	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\src\console\console.cpp.obj -c X:\TrafficLogger\src\console\console.cpp
 
 CMakeFiles/unit_tests.dir/src/console/console.cpp.i: cmake_force
@@ -98,24 +112,74 @@ CMakeFiles/unit_tests.dir/src/console/console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/src/console/console.cpp.s"
 	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\src\console\console.cpp -o CMakeFiles\unit_tests.dir\src\console\console.cpp.s
 
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj: ../src/session-manager/configurations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj"
+	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\src\session-manager\configurations.cpp.obj -c X:\TrafficLogger\src\session-manager\configurations.cpp
+
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.i"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\src\session-manager\configurations.cpp > CMakeFiles\unit_tests.dir\src\session-manager\configurations.cpp.i
+
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.s"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\src\session-manager\configurations.cpp -o CMakeFiles\unit_tests.dir\src\session-manager\configurations.cpp.s
+
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj: ../src/session-manager/session-manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj"
+	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\src\session-manager\session-manager.cpp.obj -c X:\TrafficLogger\src\session-manager\session-manager.cpp
+
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.i"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\src\session-manager\session-manager.cpp > CMakeFiles\unit_tests.dir\src\session-manager\session-manager.cpp.i
+
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.s"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\src\session-manager\session-manager.cpp -o CMakeFiles\unit_tests.dir\src\session-manager\session-manager.cpp.s
+
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj: CMakeFiles/unit_tests.dir/flags.make
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj: CMakeFiles/unit_tests.dir/includes_CXX.rsp
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj: ../src/session-manager/session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj"
+	C:\win-builds\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\unit_tests.dir\src\session-manager\session.cpp.obj -c X:\TrafficLogger\src\session-manager\session.cpp
+
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.i"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E X:\TrafficLogger\src\session-manager\session.cpp > CMakeFiles\unit_tests.dir\src\session-manager\session.cpp.i
+
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.s"
+	C:\win-builds\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S X:\TrafficLogger\src\session-manager\session.cpp -o CMakeFiles\unit_tests.dir\src\session-manager\session.cpp.s
+
 # Object files for target unit_tests
 unit_tests_OBJECTS = \
-"CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj" \
 "CMakeFiles/unit_tests.dir/test/console.cpp.obj" \
-"CMakeFiles/unit_tests.dir/src/console/console.cpp.obj"
+"CMakeFiles/unit_tests.dir/test/session.cpp.obj" \
+"CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj" \
+"CMakeFiles/unit_tests.dir/src/console/console.cpp.obj" \
+"CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj" \
+"CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj" \
+"CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj"
 
 # External object files for target unit_tests
 unit_tests_EXTERNAL_OBJECTS =
 
-unit_tests.exe: CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj
 unit_tests.exe: CMakeFiles/unit_tests.dir/test/console.cpp.obj
+unit_tests.exe: CMakeFiles/unit_tests.dir/test/session.cpp.obj
+unit_tests.exe: CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj
 unit_tests.exe: CMakeFiles/unit_tests.dir/src/console/console.cpp.obj
+unit_tests.exe: CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj
+unit_tests.exe: CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj
+unit_tests.exe: CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj
 unit_tests.exe: CMakeFiles/unit_tests.dir/build.make
 unit_tests.exe: C:/Program\ Files\ (x86)/googletest-distribution/lib/libgtestd.a
 unit_tests.exe: CMakeFiles/unit_tests.dir/linklibs.rsp
 unit_tests.exe: CMakeFiles/unit_tests.dir/objects1.rsp
 unit_tests.exe: CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable unit_tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable unit_tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\unit_tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,4 +1,5 @@
-X:/TrafficLogger/cmake-build-debug/CMakeFiles/console.dir
+X:/TrafficLogger/cmake-build-debug/CMakeFiles/CONSOLE_MDL.dir
+X:/TrafficLogger/cmake-build-debug/CMakeFiles/SESSION_MDL.dir
 X:/TrafficLogger/cmake-build-debug/CMakeFiles/traffic_logger.dir
 X:/TrafficLogger/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 X:/TrafficLogger/cmake-build-debug/CMakeFiles/unit_tests.dir

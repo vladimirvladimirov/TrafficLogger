@@ -25,6 +25,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
 					<Add directory="X:/TrafficLogger/./src/console"/>
 					<Add directory="C:/win-builds/include"/>
 					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
@@ -49,6 +50,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
 					<Add directory="X:/TrafficLogger/./src/console"/>
 					<Add directory="C:/win-builds/include"/>
 					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
@@ -65,6 +67,56 @@
 					<DistClean command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="SESSION_MDL">
+				<Option output="X:/TrafficLogger/cmake-build-debug/libSESSION_MDL.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="X:/TrafficLogger/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
+					<Add directory="X:/TrafficLogger/./src/console"/>
+					<Add directory="C:/win-builds/include"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 SESSION_MDL"/>
+					<CompileFile command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SESSION_MDL/fast">
+				<Option output="X:/TrafficLogger/cmake-build-debug/libSESSION_MDL.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="X:/TrafficLogger/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
+					<Add directory="X:/TrafficLogger/./src/console"/>
+					<Add directory="C:/win-builds/include"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/x86_64-w64-mingw32"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3/backward"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed"/>
+					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 SESSION_MDL/fast"/>
+					<CompileFile command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/win-builds/bin/mingw32-make.exe -f &quot;X:/TrafficLogger/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="traffic_logger">
 				<Option output="X:/TrafficLogger/cmake-build-debug/traffic_logger.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="X:/TrafficLogger/cmake-build-debug"/>
@@ -73,6 +125,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
 					<Add directory="X:/TrafficLogger/./src/console"/>
 					<Add directory="C:/win-builds/include"/>
 					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
@@ -97,6 +150,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
 					<Add directory="X:/TrafficLogger/./src/console"/>
 					<Add directory="C:/win-builds/include"/>
 					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
@@ -131,6 +185,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
 					<Add directory="X:/TrafficLogger/./src/console"/>
 					<Add directory="C:/win-builds/include"/>
 					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
@@ -155,6 +210,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Program Files (x86)/googletest-distribution/include/gtest"/>
+					<Add directory="X:/TrafficLogger/./src/session-manager"/>
 					<Add directory="X:/TrafficLogger/./src/console"/>
 					<Add directory="C:/win-builds/include"/>
 					<Add directory="c:\win-builds\bin\../lib64/gcc/x86_64-w64-mingw32/4.8.3/../../../../include/c++/4.8.3"/>
@@ -188,11 +244,39 @@
 		</Unit>
 		<Unit filename="X:/TrafficLogger/src/console/console.h">
 			<Option target="CONSOLE_MDL"/>
+			<Option target="unit_tests"/>
 		</Unit>
 		<Unit filename="X:/TrafficLogger/src/main.cpp">
 			<Option target="traffic_logger"/>
 		</Unit>
+		<Unit filename="X:/TrafficLogger/src/session-manager/configurations.cpp">
+			<Option target="SESSION_MDL"/>
+			<Option target="unit_tests"/>
+		</Unit>
+		<Unit filename="X:/TrafficLogger/src/session-manager/configurations.h">
+			<Option target="SESSION_MDL"/>
+			<Option target="unit_tests"/>
+		</Unit>
+		<Unit filename="X:/TrafficLogger/src/session-manager/session-manager.cpp">
+			<Option target="SESSION_MDL"/>
+			<Option target="unit_tests"/>
+		</Unit>
+		<Unit filename="X:/TrafficLogger/src/session-manager/session-manager.h">
+			<Option target="SESSION_MDL"/>
+			<Option target="unit_tests"/>
+		</Unit>
+		<Unit filename="X:/TrafficLogger/src/session-manager/session.cpp">
+			<Option target="SESSION_MDL"/>
+			<Option target="unit_tests"/>
+		</Unit>
+		<Unit filename="X:/TrafficLogger/src/session-manager/session.h">
+			<Option target="SESSION_MDL"/>
+			<Option target="unit_tests"/>
+		</Unit>
 		<Unit filename="X:/TrafficLogger/test/console.cpp">
+			<Option target="unit_tests"/>
+		</Unit>
+		<Unit filename="X:/TrafficLogger/test/session.cpp">
 			<Option target="unit_tests"/>
 		</Unit>
 		<Unit filename="X:/TrafficLogger/test/unit_tests.cpp">

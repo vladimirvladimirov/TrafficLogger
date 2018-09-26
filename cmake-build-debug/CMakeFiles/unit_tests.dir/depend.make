@@ -4,6 +4,16 @@
 CMakeFiles/unit_tests.dir/src/console/console.cpp.obj: ../src/console/console.cpp
 CMakeFiles/unit_tests.dir/src/console/console.cpp.obj: ../src/console/console.h
 
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj: ../src/session-manager/configurations.cpp
+CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj: ../src/session-manager/configurations.h
+
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj: ../src/session-manager/session-manager.cpp
+CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj: ../src/session-manager/session-manager.h
+
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj: ../src/session-manager/configurations.h
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj: ../src/session-manager/session.cpp
+CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj: ../src/session-manager/session.h
+
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: .././src/console/console.h
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-death-test.h
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-message.h
@@ -27,6 +37,31 @@ CMakeFiles/unit_tests.dir/test/console.cpp.obj: C:/Program\ Files\ (x86)/googlet
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-string.h
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-type-util.h
 CMakeFiles/unit_tests.dir/test/console.cpp.obj: ../test/console.cpp
+
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: .././src/session-manager/configurations.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: .././src/session-manager/session.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-death-test.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-message.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-param-test.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-printers.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-test-part.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-typed-test.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest_pred_impl.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest_prod.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-filepath.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-internal.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-param-util.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-port.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-string.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/internal/gtest-type-util.h
+CMakeFiles/unit_tests.dir/test/session.cpp.obj: ../test/session.cpp
 
 CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-death-test.h
 CMakeFiles/unit_tests.dir/test/unit_tests.cpp.obj: C:/Program\ Files\ (x86)/googletest-distribution/include/gtest/gtest-message.h

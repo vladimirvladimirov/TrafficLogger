@@ -25,7 +25,7 @@ namespace console {
         virtual std::string read_next_line() = 0;
 
         virtual int write_message(const std::string &msg) = 0;
-    };
+    };  // class IConsole
 
     class GenericConsole : public IConsole {
     public:
@@ -41,7 +41,7 @@ namespace console {
 
         std::istream &in;
         std::ostream &out;
-    };
+    };  // class GenericConsole
 
     /**
      * Simple implementation of IConsole, used to read and write from/to
@@ -52,7 +52,7 @@ namespace console {
         SimpleConsole();
 
         virtual ~SimpleConsole();
-    };
+    };  // class SimpleConsole
 
 }  // namespace console
 

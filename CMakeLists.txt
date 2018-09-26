@@ -9,15 +9,22 @@ set(GTEST_LIB_FOLDER "${GTEST_ROOT}/lib")
 set(GTEST_HEADERS_LOCATION "${GTEST_ROOT}/include/gtest")
 
 include_directories(${GTEST_HEADERS_LOCATION})
+include_directories("./src/session-manager")
 include_directories("./src/console")
 
 # Modules and internal libraries
+file(GLOB CONSOLE_SRCS "src/console/*.cpp" "src/console/*.h")
 add_library(CONSOLE_MDL src/console/console.cpp src/console/console.h)
-set(CONSOLE_SRCS src/console/console.cpp)
+
+file(GLOB SESSION_SRCS "src/session-manager/*.h" "src/session-manager/*.cpp")
+add_library(SESSION_MDL ${SESSION_SRCS})
+
+# Other
+file(GLOB TEST_SRCS "test/*.cpp")
 
 # Executables
 add_executable(traffic_logger src/main.cpp)
-add_executable(unit_tests test/unit_tests.cpp test/console.cpp ${CONSOLE_SRCS})
+add_executable(unit_tests ${TEST_SRCS} ${CONSOLE_SRCS} ${SESSION_SRCS})
 
 # Linking external libs
 target_link_libraries(unit_tests PUBLIC "${GTEST_LIB_FOLDER}/libgtestd.a")

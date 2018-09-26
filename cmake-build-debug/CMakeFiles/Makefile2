@@ -101,13 +101,50 @@ clean: CMakeFiles/CONSOLE_MDL.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/SESSION_MDL.dir
+
+# All Build rule for target.
+CMakeFiles/SESSION_MDL.dir/all:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/depend
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=3,4,5,6 "Built target SESSION_MDL"
+.PHONY : CMakeFiles/SESSION_MDL.dir/all
+
+# Include target in all.
+all: CMakeFiles/SESSION_MDL.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SESSION_MDL.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\TrafficLogger\cmake-build-debug\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/SESSION_MDL.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\TrafficLogger\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/SESSION_MDL.dir/rule
+
+# Convenience name for target.
+SESSION_MDL: CMakeFiles/SESSION_MDL.dir/rule
+
+.PHONY : SESSION_MDL
+
+# clean rule for target.
+CMakeFiles/SESSION_MDL.dir/clean:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/clean
+.PHONY : CMakeFiles/SESSION_MDL.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/SESSION_MDL.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/traffic_logger.dir
 
 # All Build rule for target.
 CMakeFiles/traffic_logger.dir/all:
 	$(MAKE) -f CMakeFiles\traffic_logger.dir\build.make CMakeFiles/traffic_logger.dir/depend
 	$(MAKE) -f CMakeFiles\traffic_logger.dir\build.make CMakeFiles/traffic_logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target traffic_logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target traffic_logger"
 .PHONY : CMakeFiles/traffic_logger.dir/all
 
 # Include target in all.
@@ -144,7 +181,7 @@ clean: CMakeFiles/traffic_logger.dir/clean
 CMakeFiles/unit_tests.dir/all:
 	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/depend
 	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8 "Built target unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=X:\TrafficLogger\cmake-build-debug\CMakeFiles --progress-num=9,10,11,12,13,14,15,16 "Built target unit_tests"
 .PHONY : CMakeFiles/unit_tests.dir/all
 
 # Include target in all.
@@ -154,7 +191,7 @@ all: CMakeFiles/unit_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/unit_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start X:\TrafficLogger\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start X:\TrafficLogger\cmake-build-debug\CMakeFiles 8
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/unit_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start X:\TrafficLogger\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/unit_tests.dir/rule

@@ -123,6 +123,19 @@ CONSOLE_MDL/fast:
 .PHONY : CONSOLE_MDL/fast
 
 #=============================================================================
+# Target rules for targets named SESSION_MDL
+
+# Build rule for target.
+SESSION_MDL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 SESSION_MDL
+.PHONY : SESSION_MDL
+
+# fast build rule for target.
+SESSION_MDL/fast:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/build
+.PHONY : SESSION_MDL/fast
+
+#=============================================================================
 # Target rules for targets named traffic_logger
 
 # Build rule for target.
@@ -205,6 +218,96 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\traffic_logger.dir\build.make CMakeFiles/traffic_logger.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/session-manager/configurations.obj: src/session-manager/configurations.cpp.obj
+
+.PHONY : src/session-manager/configurations.obj
+
+# target to build an object file
+src/session-manager/configurations.cpp.obj:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/configurations.cpp.obj
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.obj
+.PHONY : src/session-manager/configurations.cpp.obj
+
+src/session-manager/configurations.i: src/session-manager/configurations.cpp.i
+
+.PHONY : src/session-manager/configurations.i
+
+# target to preprocess a source file
+src/session-manager/configurations.cpp.i:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/configurations.cpp.i
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.i
+.PHONY : src/session-manager/configurations.cpp.i
+
+src/session-manager/configurations.s: src/session-manager/configurations.cpp.s
+
+.PHONY : src/session-manager/configurations.s
+
+# target to generate assembly for a file
+src/session-manager/configurations.cpp.s:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/configurations.cpp.s
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/configurations.cpp.s
+.PHONY : src/session-manager/configurations.cpp.s
+
+src/session-manager/session-manager.obj: src/session-manager/session-manager.cpp.obj
+
+.PHONY : src/session-manager/session-manager.obj
+
+# target to build an object file
+src/session-manager/session-manager.cpp.obj:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/session-manager.cpp.obj
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.obj
+.PHONY : src/session-manager/session-manager.cpp.obj
+
+src/session-manager/session-manager.i: src/session-manager/session-manager.cpp.i
+
+.PHONY : src/session-manager/session-manager.i
+
+# target to preprocess a source file
+src/session-manager/session-manager.cpp.i:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/session-manager.cpp.i
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.i
+.PHONY : src/session-manager/session-manager.cpp.i
+
+src/session-manager/session-manager.s: src/session-manager/session-manager.cpp.s
+
+.PHONY : src/session-manager/session-manager.s
+
+# target to generate assembly for a file
+src/session-manager/session-manager.cpp.s:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/session-manager.cpp.s
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/session-manager.cpp.s
+.PHONY : src/session-manager/session-manager.cpp.s
+
+src/session-manager/session.obj: src/session-manager/session.cpp.obj
+
+.PHONY : src/session-manager/session.obj
+
+# target to build an object file
+src/session-manager/session.cpp.obj:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/session.cpp.obj
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.obj
+.PHONY : src/session-manager/session.cpp.obj
+
+src/session-manager/session.i: src/session-manager/session.cpp.i
+
+.PHONY : src/session-manager/session.i
+
+# target to preprocess a source file
+src/session-manager/session.cpp.i:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/session.cpp.i
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.i
+.PHONY : src/session-manager/session.cpp.i
+
+src/session-manager/session.s: src/session-manager/session.cpp.s
+
+.PHONY : src/session-manager/session.s
+
+# target to generate assembly for a file
+src/session-manager/session.cpp.s:
+	$(MAKE) -f CMakeFiles\SESSION_MDL.dir\build.make CMakeFiles/SESSION_MDL.dir/src/session-manager/session.cpp.s
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/src/session-manager/session.cpp.s
+.PHONY : src/session-manager/session.cpp.s
+
 test/console.obj: test/console.cpp.obj
 
 .PHONY : test/console.obj
@@ -231,6 +334,33 @@ test/console.s: test/console.cpp.s
 test/console.cpp.s:
 	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/console.cpp.s
 .PHONY : test/console.cpp.s
+
+test/session.obj: test/session.cpp.obj
+
+.PHONY : test/session.obj
+
+# target to build an object file
+test/session.cpp.obj:
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/session.cpp.obj
+.PHONY : test/session.cpp.obj
+
+test/session.i: test/session.cpp.i
+
+.PHONY : test/session.i
+
+# target to preprocess a source file
+test/session.cpp.i:
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/session.cpp.i
+.PHONY : test/session.cpp.i
+
+test/session.s: test/session.cpp.s
+
+.PHONY : test/session.s
+
+# target to generate assembly for a file
+test/session.cpp.s:
+	$(MAKE) -f CMakeFiles\unit_tests.dir\build.make CMakeFiles/unit_tests.dir/test/session.cpp.s
+.PHONY : test/session.cpp.s
 
 test/unit_tests.obj: test/unit_tests.cpp.obj
 
@@ -266,6 +396,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... CONSOLE_MDL
+	@echo ... SESSION_MDL
 	@echo ... traffic_logger
 	@echo ... rebuild_cache
 	@echo ... unit_tests
@@ -276,9 +407,21 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/session-manager/configurations.obj
+	@echo ... src/session-manager/configurations.i
+	@echo ... src/session-manager/configurations.s
+	@echo ... src/session-manager/session-manager.obj
+	@echo ... src/session-manager/session-manager.i
+	@echo ... src/session-manager/session-manager.s
+	@echo ... src/session-manager/session.obj
+	@echo ... src/session-manager/session.i
+	@echo ... src/session-manager/session.s
 	@echo ... test/console.obj
 	@echo ... test/console.i
 	@echo ... test/console.s
+	@echo ... test/session.obj
+	@echo ... test/session.i
+	@echo ... test/session.s
 	@echo ... test/unit_tests.obj
 	@echo ... test/unit_tests.i
 	@echo ... test/unit_tests.s

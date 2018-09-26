@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-X:/TrafficLogger/src/console/console.cpp
+X:/TrafficLogger/src/session-manager/configurations.h
 string
 -
-console.h
-X:/TrafficLogger/src/console/console.h
+vector
+-
 
-X:/TrafficLogger/src/console/console.h
-iostream
--
-string
+X:/TrafficLogger/src/session-manager/session.cpp
+session.h
+X:/TrafficLogger/src/session-manager/session.h
+
+X:/TrafficLogger/src/session-manager/session.h
+configurations.h
+X:/TrafficLogger/src/session-manager/configurations.h
+memory
 -
 

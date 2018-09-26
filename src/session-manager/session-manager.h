@@ -1,0 +1,8 @@
+//
+// Created by vivanovv on 9/25/2018.
+//
+
+#ifndef TRAFFIC_LOGGER_SESSION_MANAGER_H
+#define TRAFFIC_LOGGER_SESSION_MANAGER_H
+
+#endif //TRAFFIC_LOGGER_SESSION_MANAGER_H
